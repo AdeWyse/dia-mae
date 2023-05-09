@@ -53,5 +53,6 @@ main{
     font-size: 10em;
     color: rgba(207, 245, 255, 0.938); 
     transition: color 0.5s ease;
+    text-align: center;
 }
 
