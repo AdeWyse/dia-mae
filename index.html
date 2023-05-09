@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title id="titulo">Surpresa</title>
+	<link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/fireworks-js@2.x/dist/index.umd.js"></script>
+    <script src="https://unpkg.com/fireworks-js@2.x/dist/index.umd.js"></script>
+</head>
+<body>
+        <main class="beforeClick" id="main">
+            <button onClick="clicou()" class="bigButton" id="bigButton">Clica em mim!</button>
+            <h1 class="hiddenEl" id="mensagem">Feliz Dia das Mães!</h1>
+        </main>
+
+    <script>
+        function clicou(){
+            const container = document.getElementById('main');
+            const fireworks = new Fireworks.default(container);
+
+            var button = document.getElementById('bigButton');
+            var mensagem = document.getElementById('mensagem');
+
+            document.title = 'Feliz Dia das Mães!'
+            button.className = 'hiddenEl';
+            mensagem.className = 'mensagem';
+
+            const main = document.querySelector('main');
+            main.classList.remove('beforeClick');
+            main.classList.add('afterClick');
+
+            fireworks.start()
+        }
+    </script>
+</body>
+</html>

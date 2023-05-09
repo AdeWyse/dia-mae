@@ -1,0 +1,57 @@
+.hiddenEl{
+    display: none;
+}
+
+html {
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    height: 100%;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Caveat Brush', cursive;
+}
+
+.beforeClick {
+    background-color: rgb(76, 223, 237);
+
+}
+  
+.afterClick {
+    transition: background-color 0.5s ease;
+    background-color: rgb(6, 12, 15);
+}
+
+.bigButton{
+    background-color: rgb(255, 255, 255);
+    font-size: xx-large;
+    font-family: 'Caveat Brush', cursive;
+    color: black;
+    padding: 1em;
+    border-radius: 5;
+    border: none;
+}
+
+.bigButton:hover{
+    cursor: pointer;
+    color: rgb(137, 221, 228);
+}
+
+.mensagem{
+    position: absolute;
+    top: auto;
+    right: auto;
+    font-size: 10em;
+    color: rgba(95, 234, 247, 0.774); 
+    transition: color 0.5s ease;
+}
+
